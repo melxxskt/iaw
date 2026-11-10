@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Evidencias - Melanie Rodríguez Salazar - 5CPM</title>
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --card-bg: #1e293b;
+      --text-color: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary-color: #38bdf8;
+      --secondary-color: #818cf8;
+      --accent-color: #34d399;
+      --border-color: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .group-badge {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.3rem 0.8rem;
+      background-color: var(--primary-color);
+      color: #000;
+      font-weight: bold;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      flex: 1;
+    }
+
+    .module-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .module-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .module-card h2 {
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 2px solid var(--border-color);
+    }
+
+    .construye h2 {
+      color: var(--primary-color);
+    }
+
+    .implementa h2 {
+      color: var(--secondary-color);
+    }
+
+    .practice-list {
+      list-style: none;
+    }
+
+    .practice-item {
+      margin-bottom: 0.8rem;
+    }
+
+    .practice-item a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1rem;
+      background-color: rgba(255, 255, 255, 0.03);
+      color: var(--text-color);
+      text-decoration: none;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .practice-item a:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+    }
+
+    .implementa .practice-item a:hover {
+      border-color: var(--secondary-color);
+      color: var(--secondary-color);
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      background-color: var(--border-color);
+      color: var(--accent-color);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    footer strong {
+      color: var(--primary-color);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portafolio de Evidencias</h1>
+    <p>Desarrollo e Implementación de Aplicaciones Web</p>
+    <span class="group-badge">Grupo: 5CPM</span>
+  </header>
+
+  <main class="container">
+    
+    <!-- BLOQUE 1: CONSTRUYE APLICACIONES WEB -->
+    <section class="module-card construye">
+      <h2>Construye Aplicaciones Web</h2>
+      <ul class="practice-list">
+        <li class="practice-item">
+          <a href="actividad1.html" target="_blank">
+            <span>Actividad 1</span>
+            <span class="badge">Abrir</span>
+          </a>
+        </li>
+        <li class="practice-item">
+          <a href="imagen.html" target="_blank">
+            <span>Imagen</span>
+            <span class="badge">Abrir</span>
+          </a>
+        </li>
+        <li class="practice-item">
+          <a href="actividad2.html" target="_blank">
+            <span>Actividad 2</span>
+            <span class="badge">Abrir</span>
+          </a>
+        </li>
+        <li class="practice-item">
+          <a href="ejemplo3.html" target="_blank">
+            <span>Ejemplo 3</span>
+            <span class="badge">Abrir</span>
+          </a>
+        </li>
+        <li class="practice-item">
+          <a href="blabla4.html" target="_blank">
+            <span>Bla bla 4</span>
+            <span class="badge">Abrir</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- BLOQUE 2: IMPLEMENTA APLICACIONES WEB -->
+    <section class="module-card implementa">
+      <h2>Implementa Aplicaciones Web</h2>
+      <ul class="practice-list">
+        <li class="practice-item">
+          <a href="#" target="_blank">
+            <span>Práctica 1: Servidores y Entorno</span>
+            <span class="badge">Pendiente</span>
+          </a>
+        </li>
+        <li class="practice-item">
+          <a href="#" target="_blank">
+            <span>Práctica 2: Despliegue Web</span>
+            <span class="badge">Pendiente</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>Rodríguez Salazar Melanie</strong> | Grupo: <strong>5CPM</strong></p>
+  </footer>
+
+</body>
+</html>
